@@ -27,3 +27,8 @@ SELECT COUNT(pelicula) AS numero_peliculas, director FROM peliculas GROUP BY dir
 
 SELECT COUNT(DISTINCT director) AS numero_de_directores FROM peliculas;
 
+-- Indicar las películas estrenadas entre los años 1990 y 1999 (ambos incluidos) ordenadas por título de manera ascendente.
+
+SELECT pelicula FROM peliculas WHERE año_estreno >= 1990 AND año_estreno <= 1999 ORDER BY pelicula ASC;
+
+
