@@ -31,4 +31,8 @@ SELECT COUNT(DISTINCT director) AS numero_de_directores FROM peliculas;
 
 SELECT pelicula FROM peliculas WHERE año_estreno >= 1990 AND año_estreno <= 1999 ORDER BY pelicula ASC;
 
+-- Listar el reparto de las películas lanzadas el año 2001
 
+SELECT actor FROM reparto AS r INNER JOIN peliculas AS p ON r.id=p.id WHERE año_estreno = '2001';
+
+-- 
